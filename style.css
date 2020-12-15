@@ -118,3 +118,9 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
+
+@media (max-width: 400px) {
+    .boxes {
+        flex-direction: column;
+    }
+}
