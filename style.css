@@ -1,0 +1,100 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f1faee;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.boxes{
+    height:150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.key{
+    height:80%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px transparent black;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #a8dadc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s;
+}
+.key:hover {
+    transform:translateY(-10px);
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+.keyType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+    margin: 0;
+    background-color:#457b9d;
+}
+#result {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 250px;
+}
+#keyValue {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+}
+#keyCode {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+}
+#charCode {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+}
+
+#heading {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #1d3557;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(29,53,87,0.3);
+    background-color: #457b9d;
+    transition: transform 0.5s, box-shadow 0.5s;
+    color: #f1faee;
+
+}
+#heading:hover {
+    transform:translateY(-10px);
+    box-shadow: 0 16px 32px 0 rgba(29,53,87,0.3);
+
+}
