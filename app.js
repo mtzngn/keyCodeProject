@@ -13,18 +13,14 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].style.visibility = "hidden"
 }
 heading.style.marginTop = "200px";
-window.addEventListener("keypress", logKey)
+window.addEventListener("keydown", logKey)
 
 function logKey(e) {
-    if (e.key == e.key.toUpperCase()) {
+
         keyValue.textContent = e.key.toLowerCase();
         charCode.textContent = e.which ;
         result.textContent = e.which;
-    } else {
-        keyValue.textContent = e.key;
-        charCode.textContent = e.which - 32;
-        result.textContent = e.which -32;
-    }
+
     keyCode.textContent = e.code;
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].style.visibility = ""
